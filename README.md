@@ -21,11 +21,11 @@ Before you begin, ensure you have the following installed:
 
 #Frontend (Vite App)
 ## Setup
-Navigate to the frontend directory within the cloned repository:
-   ```bash
-   cd your-repo/client
+ Navigate to the frontend directory within the cloned repository:
+      ```bash
+        cd /client
 
-Install dependencies:
-   ```base
-   npm install
+#Frontend (Vite App)
+
+
 
