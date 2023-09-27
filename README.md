@@ -18,3 +18,14 @@ Before you begin, ensure you have the following installed:
 
    ```bash
    git clone https://github.com/akashpatelknit/Emitrr.git
+
+#Frontend (Vite App)
+## Setup
+Navigate to the frontend directory within the cloned repository:
+   ```bash
+   cd your-repo/client
+
+Install dependencies:
+   ```base
+   npm install
+
