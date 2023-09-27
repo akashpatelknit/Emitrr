@@ -1,0 +1,119 @@
+.question_container {
+	width: 100%;
+	margin: auto;
+	background-color: #343a40;
+}
+.questions {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 90vh;
+	width: 80%;
+	margin: auto;
+	color: white;
+	
+	>h2{
+		text-align: center;
+	}
+	.nextQuestion{
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+	}
+
+	> p {
+		font-size: 1rem;
+		font-weight: 600;
+		margin-bottom: 1rem;
+		box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+		padding: 10px;
+		width: fit-content;
+		text-align: center;
+		border-radius: 10px;
+		color: yellowgreen;
+	}
+	.question {
+		padding: 2rem;
+		width: 100%;
+
+		> h5 {
+			padding: 0.5rem;
+			font-size: 2rem;
+			box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+		}
+
+		.question_options {
+			display: flex;
+			flex-direction: column;
+			align-items: start;
+			justify-content: start;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			width: 100%;
+			gap: 1rem;
+
+			.question_options_items {
+				display: flex;
+				flex-direction: row;
+				border-radius: 6px;
+				width: 100%;
+
+				.question_options_items_btn {
+					background-color: #343a40;
+					border: transparent;
+					color: white;
+					padding: 10px;
+					border-radius: 6px;
+					display: flex;
+					align-items: start;
+					width: 100%;
+					box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+
+					:hover {
+						transform: translateX(2rem);
+					}
+				}
+				.answer {
+					transform: translateX(2rem);
+					background-color: #fc2121;
+					border: 2px solid #fc2121;
+				}
+				.question_options_items_btn:not([disabled]):hover {
+					background-color: var(--color-darkest);
+				}
+
+				.question_options_items_btn-option:not([disabled]):hover {
+					transform: translateX(1.2rem);
+				}
+
+				.question_options_items_btn[disabled]:hover {
+					cursor: not-allowed;
+				}
+				.question_options_items_btn.correct {
+					background-color: #0ee32a;
+					border: 2px solid #0ee32a;
+					text-shadow: 0 0 5px black;
+				}
+				.question_options_items_btn.wrong {
+					background-color: red($color: #000000);
+					border: 2px solid white;
+					color: rgb(225, 211, 211);
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px) {
+	.questions {
+		width: 100%;
+		margin: auto;
+		.question {
+			> h5 {
+				font-size: 1.5rem;
+			}
+		}
+	}
+}
+@media screen and (max-width: 640px) {
+}

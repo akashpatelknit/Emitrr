@@ -1,0 +1,25 @@
+
+.result{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+    .exercise_score{
+        display: flex;
+        flex-direction: column;
+        color: yellowgreen;
+    }
+    .highScore{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: yellowgreen;
+        
+    }
+
+}

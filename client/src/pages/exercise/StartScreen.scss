@@ -1,0 +1,181 @@
+.start-screen {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #343a40;
+	color: white;
+	min-height: 90vh;
+	> h2 {
+		margin-top: 20px;
+		color: white;
+	}
+	> h3 {
+		margin-top: 20px;
+	}
+	> h5 {
+		margin-bottom: 20px;
+	}
+}
+.game-mode {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	.instructions {
+		display: flex;
+		flex-direction: column;
+		text-align: left;
+		margin-top: 20px;
+
+		> h4 {
+			margin-left: 10px;
+		}
+		> ol {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+
+			> li {
+				box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+				padding: 10px;
+				width: 100%;
+				border-radius: 10px;
+				color: #bca3bc;
+			}
+		}
+	}
+}
+.app-header {
+	width: 100%;
+	margin-bottom: 4rem;
+	text-align: center;
+}
+.app-header span {
+	color: #e2d40f;
+	text-shadow: 0 0 15px black;
+	animation: tilting 3s infinite;
+	transition: none;
+}
+@keyframes tilting {
+	10% {
+		opacity: 1;
+	}
+	14% {
+		opacity: 0;
+	}
+	18% {
+		opacity: 1;
+	}
+	22% {
+		opacity: 0;
+	}
+	26% {
+		opacity: 1;
+	}
+}
+.error {
+	text-align: center;
+	font-size: 1.6rem;
+	font-weight: 500;
+	padding: 2rem;
+	background-color: #495057;
+	border-radius: 100px;
+}
+
+img {
+	width: 14rem;
+}
+
+h1 {
+	font-family: 'Codystar';
+	font-size: 5.6rem;
+}
+
+h2 {
+	font-size: 3.6rem;
+	margin-bottom: 2rem;
+}
+
+h3 {
+	font-size: 2.4rem;
+	font-weight: 600;
+	margin-bottom: 4rem;
+}
+
+h4 {
+	font-size: 2.2rem;
+	font-weight: 600;
+	margin-bottom: 2.4rem;
+}
+
+.start {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.progress {
+	margin-bottom: 4rem;
+	display: grid;
+	justify-content: space-between;
+	gap: 1.2rem;
+	grid-template-columns: auto auto;
+	font-size: 1.8rem;
+	color: var(--color-medium);
+}
+
+::-webkit-progress-bar {
+	background-color: var(--color-medium);
+	border-radius: 100px;
+}
+::-webkit-progress-value {
+	background-color: var(--color-theme);
+	border-radius: 100px;
+}
+
+.btn2 {
+	display: block;
+	font-family: inherit;
+	color: inherit;
+	font-size: 2rem;
+	border: none;
+	padding: 1rem 2rem;
+	cursor: pointer;
+	border-radius: 10px;
+	font-weight: bolder;
+	text-shadow: 0 0 5px black;
+	opacity: 0.8;
+	transition: 0.3s;
+}
+.btn2:hover {
+	opacity: 1;
+	scale: 1.1;
+}
+
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 640px) {
+	.start-screen {
+		justify-content: start;
+	}
+	h2 {
+		font-family: 'Codystar';
+		font-size: 3rem;
+	}
+
+	h3 {
+		font-size: 2rem;
+		margin-bottom: 2rem;
+	}
+	h5 {
+		font-size: 2rem;
+	}
+
+	.btn2 {
+		font-size: 1rem;
+		padding: 1rem 1rem;
+		border-radius: 10px;
+	}
+}

@@ -1,0 +1,17 @@
+.leaderboard {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 80%;
+	margin: auto;
+}
+.active_user {
+	background-color: bisque;
+}
+
+@media screen and (max-width: 768px) {
+	.leaderboard {
+		width: 100%;
+	}
+}

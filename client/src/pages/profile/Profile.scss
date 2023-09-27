@@ -1,0 +1,85 @@
+#language {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 100px;
+	border: 10px solid #f1f1f1;
+	width: 90%;
+	margin: auto;
+}
+.user_detail {
+	display: flex;
+	justify-content: space-around;
+	height: 100px;
+	align-items: center;
+	border: 10px solid #f1f1f1;
+	> h3 {
+		margin-top: 60px;
+		text-align: center;
+	}
+	> button {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+		height: 50px;
+	}
+}
+.graph {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 1rem;
+	width: 90%;
+	margin: auto;
+
+	.graph_bar {
+		width: 50%;
+	}
+	.graph_chart {
+		width: 50%;
+	}
+}
+.previous_exercse {
+	display: flex;
+	justify-content: flex-start;
+	align-items: start;
+	flex-wrap: wrap;
+	gap: 1rem;
+	width: 90%;
+	margin: auto;
+	padding: 10px;
+	border: 10px solid #f1f1f1;
+
+	.previous_exercse_item {
+		background-color: #9fbbc6;
+		padding: 6px;
+		max-width: 200px;
+		border-radius: 5px;
+	}
+}
+@media screen and (max-width: 768px) {
+	.previous_exercse {
+		justify-content: center;
+		.previous_exercse_item {
+			max-width: 100%;
+		}
+	}
+	.user_detail {
+		> h3 {
+			margin-top: 30px;
+		}
+	}
+	.graph {
+		flex-direction: column;
+		width: 100%;
+		margin: auto;
+		.graph_bar {
+			width: 90%;
+			margin: auto;
+		}
+		.graph_chart {
+			width: 90%;
+			margin: auto;
+		}
+	}
+}
